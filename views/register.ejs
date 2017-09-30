@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>迷糊旅游注册</title>
+    <link rel="icon" href="images/index/shortcut-icon.jpg" type="image/x-icon">
+    <script src="javascripts/jquery-3.1.0.min.js"></script>
+    <script src="javascripts/move.js"></script>
+    <script src="javascripts/addEvent.js"></script>
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/register.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/regstyle.css">
+</head>
+<body>
+
+<div class="head w">
+    <div class="head-left"></div>
+    <div class="head-center">
+        <p><span>|</span>用户注册</p>
+    </div>
+    <div class="head-right">
+        <p><span class="icon-phone" style="color: orange;"></span> 全国客服电话</p>
+        <p>400-004-8888</p>
+    </div>
+</div>
+
+
+<div class="center w">
+    <div class="center-left">
+    <form>
+    <div class="form_group tel">
+      <label for="name"><span class="org">*</span> 手机</label>
+      <input type="tel" name="tel" id="tel">
+      <p class="message"></p>
+    </div>
+    <div class="form_group password">
+      <label for="name"><span class="org">*</span> 密码</label>
+      <input type="password" name="password" id="password">
+      <p class="message">必填，长度为6~16个字符</p>
+    </div>
+
+    <div class="form_group password_re">
+      <label for="name"><span class="org">*</span> 密码确认</label>
+      <input type="password" name="password_re" id="password_re">
+      <p class="message">两次输入相同密码</p>
+    </div>
+    <div class="form_group ">
+      <label for="name"><span class="org">*</span>手机验证</label>
+      <input type="text" name="text" id="email">
+      <p class="message"></p>
+    </div>
+    <div class="form_group email">
+      <label for="name"><span class="org">*</span> 邮箱</label>
+      <input type="email" name="email" id="email">
+      <p class="message"></p>
+    </div>
+
+   
+
+    <div class="form_group btn_group">
+      <button id="submit" type="button">验证</button>
+      <button id="reset"  type="button">重置</button>
+    </div>
+  </form>
+        <form action="#" method="post">
+            <ul id="form-ul-id">
+                <li>
+                    <label>
+                    <span >*</span> 
+                        您的手机号 
+                        <input type="text" name="phone">
+                    </label>
+                    <div class="input-hint">
+                    <span class="icon-warning-sign"></span>请输入有效手机号
+                    </div>
+                </li>
+                <li class="yanzheng">
+                    <label>
+                        <span >*</span> 
+                        图形验证码 
+                        <input type="text" placeholder="请输入计算后验证码">
+                    </label>
+                    <div class="yanzheng-pic">
+                        <img  src="images/register/checkcode.jpg" alt="点击刷新验证码">
+                    </div>
+                    <div class="input-hint">
+                        <span class="icon-warning-sign"></span>请输入验证码
+                    </div>
+                </li>
+                <li class="yanzheng">
+                    <label for="name">
+                        <span class="org">*</span> 
+                        手机验证码 
+                        <input type="tel" name="tel" id="tel">
+                    </label>
+                    <div class="yanzheng-phone">获取验证码</div>
+                    <div class="input-hint">
+                        <p class="message"></p>
+                        <!-- <span class="icon-warning-sign"></span>请输入手机验证码 -->
+                    </div>
+                </li>
+                <li>
+                    <label>
+                        <span>&nbsp;*</span> 
+                        设置密码 <input type="text" name="password">
+                    </label>
+                    <div class="input-hint">
+                        <span class="icon-warning-sign"></span>密码必须是8~16位
+                    </div>
+                </li>
+                <li>
+                    <label>&nbsp;
+                        <span>*</span> 
+                        确认密码 
+                        <input type="text" name="password2">
+                    </label>
+                    <div class="input-hint">
+                        <span class="icon-warning-sign"></span>请再次输入密码
+                    </div>
+                </li>
+                <li class="protocol">
+                    <input type="checkbox"> 我已阅读并接受 <a class="mystyle" href="#">《驴妈妈旅游网会员服务条款》</a>
+                </li>
+            </ul>
+            <div class="form-submit"><button id="form-submit-id">同意服务条款并注册</button></div>
+            <div class="direct-login">已经有账号, <a class="mystyle" href="./login.html">直接登录&gt;&gt;</a></div>
+        </form>
+        <div class="other-login">
+            <p>合作网站账号登录</p>
+            <div class="other-login-web">
+                <a href="#" class="qq"></a>
+                <a href="#" class="weixin"></a>
+                <a href="#" class="weibo"></a>
+                <a href="#" class="zhifubao"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-right"></div>
+</div>
+
+<div class="bottom">
+    <div class="service">
+
+        <!-- 点击每个li时应该进行页面的跳转，需要在js中做？？？？   -->
+        <ul>
+            <li>
+                <span class="service-one"></span>
+                <p>
+                    <strong>价格保证</strong><br/>
+                    同类产品,保证低价
+                </p>
+            </li>
+            <li>
+                <span class="service-two"></span>
+                <p>
+                    <strong>价格保证</strong><br/>
+                    同类产品,保证低价
+                </p>
+            </li>
+            <li>
+                <span class="service-three"></span>
+                <p>
+                    <strong>价格保证</strong><br/>
+                    同类产品,保证低价
+                </p>
+            </li>
+            <li>
+                <span class="service-four"></span>
+                <p>
+                    <strong>价格保证</strong><br/>
+                    同类产品,保证低价
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="other">
+        <div class="other-top">
+            <a href="#">关于我们</a> |
+            <a href="#">联系我们</a> |
+            <a href="#">网站地图</a> |
+            <a href="#">酒店品牌</a> |
+            <a href="#">酒店查询</a> |
+            <a href="#">帮助中心</a> |
+            <a href="#">友情链接</a> |
+            <a href="#">诚聘英才</a> |
+            <a href="#">旅游度假资质</a> |
+            <a href="#">意见反馈</a> |
+            <a href="#">广告业务</a>
+        </div>
+        <div>
+            Copyright © 2016 www.mihu.com. 传播股份有限公司版权所有　沪ICP备1111111号-3　增值电信业务经营许可证编号：沪B2-20100030
+        </div>
+    </div>
+</div>
+
+<script src="javascripts/validators.js"></script>
+<script src="javascripts/validator.js"></script>
+<script>
+    // window.onload = function (e) {
+
+    //     var formUlId = document.getElementById("form-ul-id");
+    //     var inputs = formUlId.getElementsByTagName("input");
+    //     var hints = formUlId.getElementsByClassName("input-hint");
+
+
+    //     (function () {
+    //         for (var i = 0; i < inputs.length - 2; i++){
+    //             inputs[i].index = i;
+
+    //             inputs[i].onclick = function (e) {
+    //                 hints[this.index].style.display = "block";
+    //             };
+
+    //             inputs[i].onfocus = function (e) {
+    //                 hints[this.index].style.display = "block";
+    //             };
+
+    //             inputs[i].onblur = function (e) {
+    //                 hints[this.index].style.display = "none";
+    //             };
+    //         }
+    //     })();
+
+        
+
+    // };
+    // 表单检查器的配置
+    const validatorConfig = {
+      // 失败时回调
+      error ($target) {
+        $target.parentElement.classList.remove('success')
+        $target.parentElement.classList.add('error')
+      },
+      // 成功时回调
+      success ($target) {
+        $target.parentElement.classList.remove('error')
+        $target.parentElement.classList.add('success')
+      },
+      // 重置时回调
+      reset (allTarget) { // 参数为每个检查表单的 dom  对象
+        allTarget.forEach(selector => {
+          $(selector).parentElement.classList.remove('error', 'success')
+        })
+      }
+    }
+    // 检查目标的配置 (target必须为 input)
+    const targetConfig = [
+        // 名称表单校验
+        {
+          target:        '#name',                // 检查的 input
+          message: {
+            target:      '.name p',              // 检查结果信息展示的地方
+            placeholder: '必填，长度为4~16个字符', // 默认信息
+            success:     '名称可用'               // 成功时显示
+          },
+          // 执行的检查器
+          validators: [
+            // name: 验证器的名字, args: 验证器的配置参数
+            { name: 'required',  args: { message: '名称不能为空' } },
+            { name: 'minAndMax', args: { min: 4, max: 16, message: '长度需在 4 ~ 16 之间' } }
+          ]
+        },
+        // 密码表单校验
+        {
+          target:     '#password',
+          message:    { target: '.password p', placeholder: '必填，长度为6~16个字符', success: '密码可用' },
+          validators: [
+            { name: 'required',  args: { message: '密码不能为空' } },
+            { name: 'minAndMax', args: { min: 6, max: 16, message: '长度需在 6 ~ 16 之间' } }
+          ]
+        },
+        // 确认密码表单校验
+        {
+          target:     '#password_re',
+          message:    { target: '.password_re p', placeholder: '两次输入相同密码', success: '两次输入密码相同' },
+          validators: [
+            { name: 'required',        args: { message: '密码不能为空' } },
+            { name: 'minAndMax',       args: { min: 6, max: 16, message: '长度需在 6 ~ 16 之间' } },
+            { name: 'equalOtherValue', args: { otherForm: '#password', message: '两次输入的密码不一致' } },
+          ]
+        },
+        // 邮箱表单校验
+        {
+          target:     '#email',
+          message:    { target: '.email p', success: '邮箱格式正确' },
+          // 验证器列表中无 required, 说明不是必填项，只有在输入内容时才会进行检验
+          validators: [{ name: 'email',     args: { message: '邮箱格式错误' } }]
+        },
+        // 手机表单校验
+        {
+          target:     '#tel',
+          message:    { target: '.tel p', success: '手机格式正确' },
+          validators: [{ name: 'tel',     args: { message: '手机格式错误' } }]
+        },
+        {
+          target: '#tex',
+          message:    { target:'.tex p',success:'验证码正确'},
+          validators: [{name:'tex', args:{ message:'验证码有误'}}]
+
+        }
+
+      ]
+    // 启动
+    window.onload = function () {
+      const
+        $ = selector => document.querySelector(selector),
+        $submit = $('#submit'), $reset = $('#reset'), $inputs = document.querySelectorAll('.form_group input'),
+        validator = new Validator({ validatorConfig, targetConfig })
+      // 单个校验
+      ;[].forEach.call($inputs, $input => {
+        $input.addEventListener('blur', ev => validator.run(ev.target.id))
+      })
+      // 确定 (需验证表单)
+      $submit.addEventListener('click', () => validator.runAll())
+      // 重置表单
+      $reset.addEventListener('click', () => validator.reset())
+    }
+</script>
+
+</body>
+</html>
